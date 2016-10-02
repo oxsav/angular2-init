@@ -5,8 +5,8 @@ var helpers = require('./helpers');
 
 module.exports = {
   entry: {
-    'polyfills': './src/polyfills.ts',
-    'vendor': './src/vendor.ts',
+    'polyfills': './src/polyfills/polyfills.ts',
+    'vendor': './src/vendor/vendor.ts',
     'app': './src/main.ts'
   },
 
@@ -29,6 +29,10 @@ module.exports = {
         loader: 'file?name=assets/[name].[hash].[ext]'
       },
       {
+        test: /\.scss$/,
+        loaders: ["style", "css?sourceMap", "sass"]
+      }
+      /*{
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
@@ -37,7 +41,7 @@ module.exports = {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
         loader: 'raw'
-      }
+    }*/
     ]
   },
 

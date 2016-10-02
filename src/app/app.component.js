@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-require('../../public/css/styles.css');
+require('../../public/css/main.scss');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -17,7 +17,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             templateUrl: '../../src/app/app.component.html',
-            styleUrls: ['../../src/app/app.component.css']
+            styleUrls: ['../../src/app/app.component.scss']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
