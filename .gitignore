@@ -1,5 +1,11 @@
 node_modules/
 typings/
-app/**/**.js
-app/**/**.js.map
+src/app/**/**.js
+src/app/**/**.js.map
 dist/
+src/app/*.js
+src/app/*.js.map
+src/app/components/**/*.js
+src/app/components/**/*.js.map
+src/app/containers/**/*.js
+src/app/containers/**/*.js.map
