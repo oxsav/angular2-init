@@ -30,8 +30,8 @@ module.exports = {
         loader: 'file?name=assets/[name].[hash].[ext]'
       },
       {
-        test: /\.scss$/,
-        loaders: ["style", "css?sourceMap", "sass"]
+          test: /\.(css|scss)$/,
+          loaders: ['to-string-loader', 'css-loader', 'sass-loader']
       }
       /*{
         test: /\.css$/,
