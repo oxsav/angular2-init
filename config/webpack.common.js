@@ -4,15 +4,15 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
 
 module.exports = {
-  entry: {
-    'polyfills': './src/polyfills/polyfills.ts',
-    'vendor': './src/vendor/vendor.ts',
-    'app': './src/main.ts'
-  },
+    entry: {
+        'polyfills': './src/polyfills/polyfills.ts',
+        'vendor': './src/vendor/vendor.ts',
+        'app': './src/main.ts'
+    },
 
-  resolve: {
-    extensions: ['', '.js', '.ts']
-  },
+    resolve: {
+        extensions: ['', '.js', '.ts']
+    },
 
   module: {
     loaders: [
@@ -44,7 +44,7 @@ module.exports = {
         loader: 'raw'
     }*/
     ]
-  },
+},
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
